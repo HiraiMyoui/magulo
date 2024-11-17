@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculate"> 
+
+         <div class="dsply">
+            <input type="text" id="display" readonly />
+          </div>
+          <div id="btns">
+
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="deleteLast()" class="delete">DEL</button>
+            <button onclick="appendOperator('%')" class="operator">%</button>
+            <button onclick="appendOperator('/')" class="operator">÷</button>
+            <button onclick="appendToDisplay('7')" class="7">7</button>
+            <button onclick="appendToDisplay('8')" class="8">8</button>
+            <button onclick="appendToDisplay('9')" class="9">9</button>
+            <button onclick="appendOperator('*')" class="operator">×</button>
+            <button onclick="appendToDisplay('4')" class="4">4</button>
+            <button onclick="appendToDisplay('5')" class="5">5</button>
+            <button onclick="appendToDisplay('6')" class="6">6</button>
+            <button onclick="appendOperator('-')" class="operator">−</button>
+            <button onclick="appendToDisplay('1')" class="1">1</button>
+            <button onclick="appendToDisplay('2')" class="2">2</button>
+            <button onclick="appendToDisplay('3')" class="3">3</button>
+            <button onclick="appendOperator('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('0')" class="number zero">0</button>
+            <button onclick="appendToDisplay('.')" class="point">.</button>
+            <button onclick="calculateResult()" class="equal">=</button>
+          </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
